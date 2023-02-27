@@ -1,0 +1,119 @@
+@import '../../scss/variables';
+
+header {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba($veryDarkViolet, 0.2);
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-items {
+            display: flex;
+            width: 50%;
+            max-width: 70rem;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            
+
+            li {
+                font-size: 1.3rem;
+                color: $darkGrayishViolet;
+                cursor: pointer;
+                &:hover {
+                    color: $veryDarkViolet;
+                }
+            }
+
+            .btn--nav-btn {
+                color: $veryDarkViolet;
+                background-color: transparent;
+                &:hover {
+                    background-color: $veryDarkViolet;
+                    color: #fff;
+                }
+            }
+
+            @media (max-width: $tablet) {
+                display: none;
+                &.active {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    width: 100vw;
+                    // height: 100vh;
+                    background-color: #2B282F;
+                    margin-inline: auto;
+                    padding: 3.125rem;
+                    padding-bottom: 35rem;
+                    left: 0;
+                    top: 4rem;
+                    z-index: 3;
+
+                   
+                    li {
+                        color: #fff;
+                        padding: 1.5rem;
+                    }
+
+                    img {
+                        margin-top: 150px;
+                    }
+                }
+
+            }
+
+            .bg--nav-img {
+                display: none;
+                @media (max-width: $tablet){
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    top: 60%;
+                    left: 0;
+                }
+            }
+        }
+
+
+        .mobile-menu {
+            display: none;
+            z-index: 999999999;
+            @media (max-width: $tablet){
+                display: block;
+                .hamburger {
+                   
+                    &.active {
+                        display: block;
+                    }
+
+                    &.hide {
+                        display: none;
+                    }
+                }
+        
+                .close-btn {
+                    display: none;
+
+                    &.active {
+                        display: block;
+                    }
+
+                    &.hide {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+    }
+}

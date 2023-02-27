@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+// LAYOUT
+$mobile: 23.4375rem;
+$tablet: 47.9375rem;
+$desktop: 90rem;
+
+
+// Colors
+// Primary
+$darkViolet: hsl(256, 26%, 20%);
+$grayishBlue: hsl(216, 30%, 68%);
+
+// NEUTRAL
+$veryDarkViolet: hsl(270, 9%, 17%);
+$darkGrayishViolet:  hsl(273, 4%, 51%);
+$veryLighGray: hsl(0, 0%, 98%);
+
+// Typography
+$body: 16px;
+
+// Headings
+$dMSerifDisplay: 'DM Serif Display', serif;
+$regular: 400;
+
+// Body
+$karla: 'Karla', sans-serif;
+$fw-400: 400;
+$fw-700: 700;
+
+// ## Icons
+
+// You can use either use the social icons provided or load in a font icon library. Some library suggestions can be found below:
+
+// - [Font Awesome](https://fontawesome.com)
+// - [IcoMoon](https://icomoon.io)
+// - [Ionicons](https://ionicons.com)
+

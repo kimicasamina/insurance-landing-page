@@ -1,0 +1,15 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+    // border: solid 1px lime;
+}
+  
+body {
+    font-family: $karla;
+    font-size: $body;
+}
+
